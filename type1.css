@@ -1,0 +1,21 @@
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(59, 57, 57);
+    list-style-type: none;
+}
+li {
+    float: left;
+}
+.one{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 20px;
+}
+.one:hover{
+    color: white;
+    background-color: rgb(8, 8, 8);
+}

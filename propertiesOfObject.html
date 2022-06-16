@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties Of Object</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            name: 'Batman',
+            age: '30',
+            occupation : 'superhero',
+            place : 'Gotham city'
+        }
+        var count = 0;
+        for(let x in person){
+            count ++;
+            document.getElementById('demo').innerHTML += `${x} : ${person[x]} ==> length:  ${person[x].length} <br>`
+        }
+        document.getElementById('demo').innerHTML += `Total lenth of person object is ${count}`
+
+    </script>
+</body>
+</html>

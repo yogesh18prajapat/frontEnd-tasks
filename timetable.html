@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Table</title>
+    <style>
+        /* *{
+            margin: 0;
+        }
+        .table_div{
+            display: flex;
+            height: 100vh;
+            background-color: aqua;
+            align-content: center;
+            justify-content: center;
+
+        } */
+
+
+        .main_div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+             margin-top: auto;
+        } 
+
+        .table_div {
+            width: fit-content;
+            /* display: flex; */
+            /* background-color: rgb(121, 233, 233); */
+            /* background-image: linear-gradient(to right, rgb(108, 236, 236), rgb(168, 241, 241)); */
+            /* align-content: center; */
+            /* justify-content: center; */
+            /* border-radius: 10px; */
+            /* box-shadow: 3px 3px 20px 1px darkseagreen ; */
+            /* margin: auto; */
+        }
+
+        caption {
+            font-size: 30px;
+            margin: 10px;
+            /* color: green; */
+        }
+
+        table,
+        .heading {
+            border-collapse: collapse;
+            border: 3px solid black;
+            /* color: crimson; */
+            /* height: auto; */
+        }
+
+        table {
+            /* width: 60%; */
+            /* height: fit-content; */
+            margin: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+/* 
+        td {
+            width: 10%;
+            color: rgb(245, 1, 164);
+        }
+        .blue{
+            color: blue;
+        }
+        .brown{
+            color: brown;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="table_div">
+            <table>
+                <caption>SCHOOL TIME-TABLE</caption>
+                <thead >
+                    <tr class="heading">
+                        <th colspan="2"></th>
+                        <th colspan="3" class="heading">Morning sessions</th>
+                        <th colspan="2">Afternoon sessions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="brown">
+                        <th>Date</th>
+                        <th>Day</th>
+                        <th colspan="3">Time 9:15am to 12 noon Subjects & Classes</th>
+                        <th colspan="2">Time 2:00pm to 4:45pm Subjects & Classes</th>
+                    </tr>
+                    <tr class="blue">
+                        <th></th>
+                        <th></th>
+                        <th>I to V</th>
+                        <th>VI to VIII</th>
+                        <th>IX</th>
+                        <th>VI to VIII</th>
+                        <th>IX</th>
+                    </tr>
+                    <tr>
+                        <td>12-04-2016</td>
+                        <td>Tuesday</td>
+                        <td>-</td>
+                        <td>F.L-Tel</td>
+                        <td>F.L.I</td>
+                        <td>C/Sanskrit</td>
+                        <td>F.L.II/C-Sanskrit</td>
+                    </tr>
+                    <tr>
+                        <td>13-04-2016</td>
+                        <td>Wednesday</td>
+                        <td>-</td>
+                        <td>S.L-Hindi/Telugu</td>
+                        <td>S.L-Hindi/Telugu</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>16-04-2016</td>
+                        <td>Saturday</td>
+                        <td>-</td>
+                        <td>English</td>
+                        <td>English-I</td>
+                        <td>-</td>
+                        <td>English-II</td>
+                    </tr>
+                    <tr>
+                        <td>18-04-2016</td>
+                        <td>Monday</td>
+                        <td>Telugu</td>
+                        <td>Maths</td>
+                        <td>Maths-I</td>
+                        <td>-</td>
+                        <td>Maths-II</td>
+                    </tr>
+                    <tr>
+                        <td>19-04-2016</td>
+                        <td>Tuesday</td>
+                        <td>English</td>
+                        <td>Gen.Science VIII-Phy.Sci</td>
+                        <td>Phy.Science</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>20-04-2016</td>
+                        <td>Wednesday</td>
+                        <td>Maths</td>
+                        <td>VII-Bio.Science</td>
+                        <td>Bio.Science</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>21-04-2016</td>
+                        <td>Thrusday</td>
+                        <td>E.V.S</td>
+                        <td>Social Studies</td>
+                        <td>Social Studies-I</td>
+                        <td>-</td>
+                        <td>Social Studies-II</td>
+                    </tr>
+                    <tr>
+                        <td>22-04-2016</td>
+                        <td>Friday</td>
+                        <td>-</td>
+                        <td>OSSC(VI & VII)OSSC-I(VIII)</td>
+                        <td>OSSC-I</td>
+                        <td>OSSC-II(VIII)</td>
+                        <td>OSSC-II</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

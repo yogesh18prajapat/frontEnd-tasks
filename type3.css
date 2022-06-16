@@ -1,0 +1,29 @@
+.list {
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(59, 57, 57);
+    list-style-type: none;
+}
+li {
+    float: left;
+}
+.one{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 60px;
+    border-right:1px solid rgb(85, 179, 85);
+}
+.active{
+    background-color: rgb(85, 179, 85);
+    border: none;
+}
+.one:hover:not(.active){
+    color: white;
+    background-color: rgb(8, 8, 8);
+}

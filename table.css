@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+  }
+  
+  .content {
+    border: 1px solid rgb(91, 214, 255);
+    box-shadow: 2px 2px 20px 3px grey;
+    width: 65%;
+    padding-bottom: 30px;
+    justify-content: center;
+    background-color: rgb(156, 221, 243);
+  }
+  
+  .table_box {
+    display: flex;
+  
+    justify-content: center;
+  }
+  
+  table {
+    border: 2px outset rgb(168, 162, 162);
+  
+  }
+  
+  tr,
+  td {
+    border: 2px inset rgb(165, 159, 159);
+    text-align: center;
+  }
+  
+  .heading {
+    color: darkcyan;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .pink {
+    color: rgb(245, 148, 164);
+  }
+  
+  .blue {
+    color: rgb(0, 0, 255);
+  }
+  
+  .crimson {
+    color: crimson;
+  }
+  
+  .brown {
+    color: brown;
+  }
+  
+  .maroon {
+    color: maroon;
+  }
+  .yellow {
+    color: yellow;
+  }
+  
+  .font {
+    font-weight: bold;
+  }
+  

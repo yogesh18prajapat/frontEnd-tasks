@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple of 3 or 7</title>
+</head>
+<body>
+
+    <label for="num">Enter a number: </label>
+    <input type="text" id="num">
+    <button id="btn">Get Answer</button>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById('btn').addEventListener('click',myfunction)
+
+        function myfunction(){
+            let numb = document.getElementById('num').value;
+            if(isNaN(numb)){
+                document.getElementById('demo').innerHTML = "not a valid input";
+            }else{
+                myfun(numb);
+            }
+        }
+      
+      function myfun(input){
+        //   let numb = document.getElementById('num').value;
+          let text = "";
+          let div3 = input % 3;
+          let div7 = input % 7;
+          if((div3 == 0) && (div7 == 0)){
+              text = "input is a multiple of 3 and 7";
+          }else if(div7 == 0){
+              text = "input is a multiple of 7";
+          }else if(div3 == 0){
+              text = "input is a multiple of 3";
+          }else{
+              text = "Input is neither a multiple of 3 nor 7";
+          }
+          document.getElementById('demo').innerHTML = text;
+      }
+
+
+    </script>
+    
+</body>
+</html>

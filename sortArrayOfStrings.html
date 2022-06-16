@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Array Of Strings</title>
+    <style>
+        textarea{
+            height: 100px;
+            width: 500px;
+            resize: none;
+            color: rgb(1, 27, 1);
+            background-color: rgb(214, 238, 214);
+            font-size: large;
+        }
+        #btn{
+            border: 2px solid red;
+            width: 100px;
+            align-items: center;
+            background-color: rgb(240, 220, 223);
+        }
+    </style>
+</head>
+<body>
+    <label for="string"></label>
+    <textarea id="string"></textarea><br>
+    <button id="btn">sort</button>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById('btn').addEventListener('click',myfun);
+        function myfun(){
+         const ival=    document.getElementById('string').value.toLowerCase();
+         let output = '';
+         const array = ival.split(', ');
+        array.sort();
+        for(let i=0; i<array.length; i++){
+            output += array[i]+"<br/>";
+        }
+        document.getElementById('demo').innerHTML = output;
+        }
+    </script>
+</body>
+</html>
