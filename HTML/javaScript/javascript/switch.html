@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Switch</title>
+</head>
+<body>
+       <h3>List of choices </h3>  
+       <ul>
+           <li> add</li>
+           <li> sub  </li>
+           <li> multi</li>
+           <li> div  </li>
+       </ul>
+
+       <form>
+           <fieldset>
+               <Legend style="text-align: center;">switch statements</Legend>
+           <label for="choice">Enter your choice</label>
+           <input type="text" name="" id="choice" style="-webkit-appearance: none;"><br/>
+           <button onclick="myfun()">Click Me!</button>
+
+        </fieldset>
+       </form>
+
+       <script>
+           function myfun(){
+            var choice =document.getElementById("choice").value;
+
+               switch(choice){
+
+                 case "add" :
+                    var a = 10;
+                    var b = 20;
+                    var add = a+b ;
+                     document.write("add of two numbers is " +add);
+                     break;
+
+                 case "sub" :
+                 var a = 10;
+                    var b = 20;
+                    var sub = a-b  ;
+                      document.write("sub of two numbers is " +sub);
+                     break;
+                 case "multi" :
+                 var a = 10;
+                    var b = 20;
+                    var multi = a*b  ;
+                     document.write("multi of two numbers is " +multi);
+                     break;
+
+                 case "div" :
+                 var a = 10;
+                    var b = 20;
+                    var div =a/b ; 
+                      document.write("div of two numbers is " +div);
+                     break;
+                 
+                 default :    
+                 document.write("inavlid input");
+               }
+              
+           }
+       </script>
+     
+    
+</body>
+</html>

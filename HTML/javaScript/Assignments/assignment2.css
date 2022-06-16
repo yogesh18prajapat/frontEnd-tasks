@@ -1,0 +1,67 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(100, 185, 255),
+    rgb(116, 99, 224)
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 2px 5px;
+  background-color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right,
+.left,
+.heading,
+.bottom {
+  padding: 13px;
+}
+.heading {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: 2px solid rgb(194, 194, 194);
+  box-shadow: 0px 1px 1px rgb(177, 171, 171);
+  border-radius: 4px;
+}
+.bottom label {
+  padding-right: 15px;
+}
+
+button {
+  border: white;
+  width: 100%;
+  padding: 3px 0px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: rgb(100, 185, 255);
+  background-image: linear-gradient(
+    to right,
+    rgb(100, 185, 255),
+    rgb(116, 99, 224)
+  );
+}

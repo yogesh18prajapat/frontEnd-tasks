@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task4</title>
+</head>
+<body>
+    <p>Onclick => yellow and Red</p>
+    <p>Onmouseover => Black and Green</p>
+    <!-- <p>Onmouseout => Darkseagreen and Crimson</p> -->
+    <button id="btn" onclick="monclick(this)" onmouseover="mhover(this)" onmouseout="mout(this)">Click Me</button>
+
+    <script>
+
+        // let btn = document.getElementById('btn');
+        // btn.addEventListener(onclick,monclick);
+
+        function monclick(obj){
+            obj.style.backgroundColor = "yellow";
+            obj.style.color = "red";
+            obj.style.fontSize = "30px";
+
+            // obj.setAttributes("style","background-color:Black; font-size:30px; color:green;");
+            // obj.style.setAttributes("backgroundColor:Black");
+        }
+        function mhover(obj){
+            obj.style.backgroundColor = "black";
+            obj.style.color = "green";
+            obj.style.fontSize = "30px";
+        }
+        
+        function mout(obj){
+            obj.style.backgroundColor = "darkseagreen";
+            obj.style.color = "crimson";
+            obj.style.fontSize = "30px";
+            
+        }
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+[{
+    "country": "India",
+    "Pin":"+91",
+    "States": [
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "andra pradesh",
+        "capital": "amravathi"
+      },
+      {
+        "name": "telangana",
+        "capital": "Hyderabad"
+      },
+      {
+        "name": "tamil nadu",
+        "capital": "chennai"
+      },
+      {
+        "name": "kerala",
+        "capital": "Thiruvananthapuram"
+      }
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "Pin":"+92",
+    "States": [
+      {
+        "name": "Balochistan",
+        "capital": "bangalore"
+      },
+      {
+        "name": "Gilgit Baltistan",
+        "capital": "Gilgit"
+      },
+      {
+        "name": "Khyber Pakhtunkhwa",
+        "capital": "Peshawar"
+      },
+      {
+        "name": "Sindh",
+        "capital": "Karachi"
+      }
+    ]
+  },
+  {
+    "country": "India",
+    "Pin":"+91",
+    "States": [
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      }
+    ]
+  },
+  {
+    "country": "India",
+    "Pin":"+91",
+    "States": [
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      }
+    ]
+  },
+  {
+    "country": "India",
+    "Pin":"+91",
+    "States": [
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      },
+      {
+        "name": "karnataka",
+        "capital": "bangalore"
+      }
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        sup{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" onsubmit="return validate()">
+        <p style="font-size: small;">Input fields with <sup>*</sup> is Mandatory</p>
+
+        <label for="fname">First Name: </label><sup>*</sup>
+        <input type="text" id="fname" placeholder="First Name">
+        <br>
+        <label for="lname">Last Name: </label><sup>*</sup>
+        <input type="text" id="lname" placeholder="Last Name">
+        <br>
+        <label for="email">Email: </label><sup>*</sup>
+        <input type="email" id="email" placeholder="Email" required>
+        <br>
+        <label for="phnum">Ph Number: </label><sup>*</sup>
+        <input type="text" id="phnum" placeholder="Mobile Number" required>
+        <br>
+        <button type="submit">submit</button>
+    
+    </form>
+    <p id="demo"></p>
+    
+    <script>
+        function validate(){
+            let fname = document.getElementById('fname').value;
+            let lname = document.getElementById('lname').value;
+            let email = document.getElementById('email').value;
+            let phnum = document.getElementById('phnum').value;
+
+            // instead of coping code, we just passed the parameter which validates text input
+            let boolean =vname(fname);
+           boolean = vname(lname);
+           console.log(boolean);
+           return boolean;
+           
+        // alert(output);
+        }
+
+        // function to validate Text inputs
+        function Vname(data){
+            var output = "";
+            if(data.length <=2 || data.trim() == ""){
+                output = "name is too short. ";
+                consile.log("too short");
+                return false;
+            }else if(name(data) != ""){
+                output += " Numbers or special characters are not allowed"
+                console.log("numbers found");
+                return false;
+            }
+                return true;
+        }
+        //Function to find if there are any special characters or numbers in a string
+        function name(element){
+            return element.match(/[0-9]/g);
+        }
+       
+    </script>
+</body>
+</html>

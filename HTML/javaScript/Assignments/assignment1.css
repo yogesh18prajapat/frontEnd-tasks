@@ -1,0 +1,9 @@
+form {
+  text-align: center;
+}
+textarea {
+  resize: none;
+}
+input {
+  margin-bottom: 15px;
+}

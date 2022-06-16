@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name":"BATMAN",
+        "email": "badassbatman@gmail.com"
+    },
+    {
+        "id": 2,
+        "name":"SUPERMAN",
+        "email": "superclark@gmail.com"
+    },
+    {
+        "id": 3,
+        "name":"FLASH",
+        "email": "lightingfast@gmail.com"
+    }
+]

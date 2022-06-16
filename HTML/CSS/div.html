@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Div and Span</title>
+        <style> 
+           /* div {
+               color: violet;
+           }        
+           span {
+               color: black;
+               background-color: rgb(212, 182, 182);
+           } */
+
+
+        .divone h1, .divtwo h2, .divtwo p{
+            color: crimson;
+            font-size: 25px;
+            font-family:cursive;
+            cursor: crosshair;
+        }
+        .divone p, .divone h2, .divtwo h1 {
+            color: darkorange;
+            font-size: 20px;
+            font-family: fantasy;
+            cursor: pointer;
+        }
+     
+        div p span {
+            color :crimson
+        }
+
+        p span {
+            color: darkblue;
+        }
+
+        body > p {
+            color: green;
+        }
+
+        body {
+            background-color: rgb(251, 242, 255);
+        }
+
+        
+        </style>
+
+    </head>
+    <body>
+        <a href="postAndStyles.html">position exercise</a>
+        <div class="divone">
+
+        <h1>This is a heading1</h1>
+        <h2>This is a heading2</h2>
+        <p>This is a repeated paragraph This is a repeated paragraph This is a repeated paragraph
+            This is a repeated paragraph
+      <span>This is a repeated paragraph</span>
+            This is a repeated paragraph This is a repeated paragraph This is a repeated paragraph
+            <span>This is a repeated paragraph</span>
+            This is a repeated paragraph This is a repeated paragraph This is a repeated paragraph
+            <span>This is a repeated paragraph</span>
+            This is a repeated paragraph
+            This is a repeated paragraph
+        </p>
+        </div>
+                      <hr/>
+        <div class="divtwo" >
+        <h1>This is a heading1</h1>
+        <h2>This is a heading2</h2>
+        <p>This is a repeated paragraph
+            <strong>***Strong is used to highlight this sentence***</strong>
+            This is a repeated paragraph This is a repeated paragraph
+      <span>This is a repeated paragraph</span>
+            This is a repeated paragraph This is a repeated paragraph This is a repeated paragraph
+            <span>This is a repeated paragraph</span>
+            This is a repeated paragraph
+            This is a repeated paragraph
+            This is a repeated paragraph
+            This is a repeated paragraph
+            <span>This is a repeated paragraph</span>
+            This is a repeated paragraph
+        </p>
+      </div>
+
+     <div>
+      <p>This is not a direct child of body tag.This a para is inside div tag.(color is not applied) .....
+          <span>span is used indise div.p</span> </p>
+     </div>
+     <P>This is a direct child of body tag. This is a para outside div selector.(color is applied) 
+         <span>span is used outside div but inside p</span></P>
+
+
+
+
+
+    </body>
+</html>

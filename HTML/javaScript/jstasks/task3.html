@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task3</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+     <script>
+        const person ={FirstName:"Itachi", LastName:"Uchiha", Occupation:"Businessman",
+             PhNo:"9876543210", City:"Tokyo", Country:"Japan"};
+
+        let count = 0;     
+        let text = "";
+        for(let x in person){
+           let num = person[x];
+           let len = num.length;
+           text += x +": " + num +":-" + len + "<br>";
+
+           count ++;
+        }
+        document.getElementById('demo').innerHTML ="Object Properties and values <br>"  + text + "<br>" +
+         "Object Length: " + count;
+
+
+  
+
+
+
+    </script>
+    
+</body>
+</html>

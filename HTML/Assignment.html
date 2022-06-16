@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color:bisque;
+            background-image: url("pic1.jpg");
+            background-repeat: no-repeat;
+            background-position: 600px 100px;
+            background-attachment:local;
+            color: darkblue;
+
+        }
+        form {
+            line-height: 35px;
+        }
+        legend {
+            text-align: center ;
+        }
+        fieldset {
+            color:crimson ;
+            
+        }
+    </style>
+    <title>assignment</title>
+</head>
+<body>
+   <form autocomplete="off">
+    <button onclick="alert('Instructions will be given here')" >Instructions</button>
+
+      <fieldset>
+        <legend>Personal details </legend>
+        
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="first name" autofocus required/><br>
+        <label for="lname">Last name:</lable>
+        <input type="text" id="lname" name="lname" placeholder="last name" required /><br/>
+         <label for="fan">Father name:</label>
+        <input type="text" id="fan" name="fan" required/><br/>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" min="1947-08-15" max="2021-12-01" required /><br/>
+
+
+
+        <label>Gender:</label>
+        <input type="radio" id="m" name="gender" value="male"/>
+        <label for="m" >Male</label>
+        <input type="radio" id="f" name="gender" value="female"/>
+        <label for="f">Female</label>
+        <input type="radio" id="o" name="gender" value="female"/>
+        <label for="o">Other</label><br/>
+        <label for="pnum">Ph no:</label>
+        <input type="tel" id="pnum" name="Pnum" maxlength="10" placeholder="9876543210" required  /><br/>
+        <label for="em">Email:</label>
+        <input type="email" id="em" name="em" placeholder="abcd@gmail.com" required/><br/>
+
+        <label for="cad">Current Address:</label>
+        <textarea name="cad" id="cad" maxlength="500"> </textarea><br/>
+        <label for="pad">Permanent Address:</label>
+        <textarea name="pad" id="pad" maxlength="500"> </textarea><br/>
+        
+        <label >Id type</label>
+        <select name="doctype" id="doctype">
+            <option value="voterid">voter id</option>
+            <option value="adharcard">Adhar card</option>
+            <option value="pancard">Pan card</option>
+        </select><br/>
+        <label for="idproof">Document </label>
+        <input type="file" id="idproof" name="idproof" multiple required><br/>
+        <input type="reset" name="reset">
+      </fieldset>
+<!----------------------------------------------------------------->
+      <fieldset>
+            <legend>Gradution</legend>
+        <label for="cn">College Name:</label>    
+        <input type="text" id="cn"  required  /><br/>
+        Gradution:
+        <label for yoj >From</label>
+        <input type="month" id="yoj" required />
+        <label for="yog">To</label>
+        <input type="month" id="yog" required/><br/>
+        Stream:
+
+        <select name="stream" id="stream">
+            <optgroup label="IT streams">
+                <option value="CS">CS </option>
+                <option value="IS">IS </option>
+                <option value="EC">EC </option>
+            </optgroup>
+            <optgroup label="non-IT streams">
+                <option value="ME">Mechanical </option>
+                <option value="CE">civil</option>
+            </optgroup>               
+        </select><br/>
+        <label for="grade">Grade:</label>
+        <select name="grade" id="grade" required>
+            <option value="percentage"> % </option>
+            <option value="grade"> grade </option>
+            <option value="cgpa"> cgpa </option>  
+        </select>
+        <input type="text" name="gradevalue" required/> <br/>
+        
+           <input type="reset" name="reset">
+      </fieldset>
+
+    <label for="example">Example for checkbox:</label> <br/> 
+    Option 1<input type="checkbox" name="example1" id="example" /><br/> 
+    Option 2<input type="checkbox" name="example2" id="example" /><br/> 
+    Option 3<input type="checkbox" name="example3" id="example" /><br/> 
+    Option 4<input type="checkbox" name="example4" id="example" /><br/> 
+
+
+    <input type="submit" value="submit"/>
+    <input type="submit" value="submit as admin" />
+
+
+
+
+   </form>
+</body>
+
+</html>
+
+
+<!-- ************************************************************************************* 
+<input list="grade" />
+           <datalist id="grade">
+               <option value="percentage">%</option>
+               <option value="cgpa">cgpa</option>
+               <option value="grade">grade</option>
+           </datalist>
+
+        -->

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax One</title>
+</head>
+<body>
+
+    <button name="" id="btn">getSample</button>
+
+    <script>
+ 
+        // Create event Listener 
+        var val = document.getElementById('btn').addEventListener(
+            'click',loadText);
+
+        function loadText(){
+            //Create XHR Object
+            var xhr =new XMLHttpRequest();
+            // xhr.Open(type,URL/Local File, async)
+            //     (type(merthod):- Get/Post)
+            //     (Link:- URL/localFile) 
+            //     (async:- boolean)
+            xhr.open('GET', 'sample1.txt', true);
+
+            xhr.onload = function(){
+                 if(this.status ==200){
+             console.log(this.responseText);
+                 } else if (this.status == 404){
+                     console.log('not Found')
+                 };
+            }
+               //HTTP statuses
+            // 200 = "OK";
+            // 403 = "Forbidden"
+            // 404 = "Not Found"
+
+            //We can use any of these two - onload or onreadystatechange
+            // xhr.onreadystatechange = function(){
+            //     if(this.readyState == 4  &&  this.status == 200){
+            //         console.log(this.responseText);
+            //     }
+            // }
+
+            //readystate values
+            // 0 : request not initialized;
+            // 1 : Server Connection Established
+            // 2 : Request recieved
+            // 3 : Processing Request
+            // 4 : Request finished and response is ready
+
+            //sends request
+            xhr.send();
+        }
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>navigation with dropdown</title>
+
+    <style> 
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        list-style-type: none;
+        background-color: black;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a, .dropdown p a {
+        display: inline-block;
+        position: relative;
+        padding: 15px 15px;
+        text-align: center;
+        color: tomato;
+        text-decoration: none;
+    }
+  
+
+
+    /* .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+} */
+
+      /* .active {
+          background-color: rgb(255, 0, 0);
+          color: paleturquoise;
+      } */
+
+      .dropcont {
+        display: none;
+        margin-top: auto;
+        position: absolute;
+        border: 2px solid black;
+        background-color: snow;
+     }
+
+     li a:hover{
+         display: block;
+        background-color:rgb(8, 66, 8);
+        color:palegreen;
+        background-color: rgb(5, 44, 5);
+    }
+
+
+    
+
+
+    
+
+
+
+    </style>
+
+    </head>
+
+    <body>
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">content 1</a></li>
+                <li><a href="#">content 2</a></li>
+                <li class="dropdown"> <a href="#" class="dropbtn"> DropDown</a>
+                    <div class="dropcont">
+                        <p><a href="#">Link 1</a></p>
+                        <p><a href="#">Link 2</a></p>
+                        <p><a href="#">Link 3</a></p>
+                        <p><a href="#">Link 4</a></p> 
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--********************** dropdown image ************************************ -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>dropdown</title>
+        <style>
+   
+          .dropdown-button {
+           position: relative;
+           display: inline-block;
+           margin-left: 20px;
+          }
+          .dropdown-content {
+              position: absolute;
+              display: none;
+              opacity: 1;
+              box-shadow:3px 3px 7px rgb(201, 54, 54), 2px 2px 10px 8px green;
+           }
+
+           .text{
+              padding: 10px;
+              text-align: center;
+              font-size: 30px;
+              font-weight: bolder;
+              font-family:cursive;
+              color: darkgreen;
+              text-shadow: 2px 2px 4px green;
+              background-color: rgb(10, 24, 10);
+           }
+
+           .dropdown-button:hover .dropdown-content{
+               display: block;
+           }
+
+    
+       </style>
+    </head>
+    <body>
+          
+    <div class="dropdown-button">
+      <img src="zoro1.png" alt="zoro" height="100px" width="100px">
+      <div class="dropdown-content" >
+          <img src="zoro1.png" alt="zoro" height="400px" width="400px">
+          <div class="text">RORONOA ZORO</div>
+      </div>     
+    </div>
+
+     
+    </body>
+</html>
+ -->
+
+
+<!--********************** dropdown button ************************************ -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>dropdown</title>
+        <style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-left: 10px;
+        border: 1px solid rgb(130, 201, 17);
+        color: crimson;
+        font-size: 120%;
+        padding: 10px;
+        background-color: darkseagreen;
+    }
+    .drop-content {
+        position: absolute;
+        display: none;
+        min-width: 100px;
+        padding-left: 20px;
+        overflow: auto;
+        line-height: 60%;
+        flex: auto;
+        background-color: lavenderblush;
+        z-index: 1;
+        box-shadow: 0px 8px 15px 2px rgb(125, 209, 125);
+    }
+    ul {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+    }
+
+    .dropdown:hover .drop-content{
+        display: block;
+    }
+    
+
+       </style>
+    </head>
+    <body>
+     <h1>Heading!</h1>
+        <div class="dropdown" style="float: left;">
+          <strong>Left drop-down!</strong>
+          <div class="drop-content">
+              <div >
+                  <p>one</p>
+                  <p>two</p>
+                  <p>three</p>
+                  <p>four</p> 
+              </div>
+          </div>           
+        </div>
+
+        <div class="dropdown" style="float: right;">
+            <strong>Right drop-down!</strong>
+            <div class="drop-content">
+                <div >
+                    <p>one</p>
+                    <p>two</p>
+                    <p>three</p>
+                    <p>four</p> 
+                </div>
+            </div>           
+          </div>
+
+    </body>
+</html> -->

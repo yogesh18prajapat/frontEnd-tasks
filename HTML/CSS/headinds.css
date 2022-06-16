@@ -1,0 +1,58 @@
+h1 {
+    border:2px dotted black;
+    color: crimson;
+    border-radius: 50px;
+    text-shadow: 5px 6px 7px darkseagreen;
+    /* text-shadow: horizontal shadow 5px
+                    vertical shadow 6px
+                    blur 7px
+                    color darkseagreen ; */
+}
+
+h2 {
+    border: 2px solid black;
+    color: yellow;
+    border-radius: 50px;
+
+}
+h3{
+    border: 5px inset black;
+    color: green;
+    border-radius: 50px;
+
+}
+h4 {
+    border:5px outset black;
+    color:violet;
+    border-radius: 50px;
+
+}
+h5{
+    border: 2px dashed black;
+    color: tomato;
+    border-radius: 50px;
+
+}
+h6{ 
+    border: 2px double black;
+    color: peru;
+    border-radius: 50px;
+
+}
+
+a:link {
+    background-color: springgreen;
+    color: crimson;
+    border:2px solid black;
+    text-decoration: none;
+    margin: 20px 20px;
+   
+}
+
+a:hover {
+    background-color: tomato;
+    font-size: xx-large;
+    border-collapse: collapse;
+    text-decoration: none;
+    padding: 10px 10px;
+}

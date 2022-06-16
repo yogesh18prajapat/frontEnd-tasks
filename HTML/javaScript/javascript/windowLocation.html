@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="myfun()">Click Me</button>
+
+    <script>
+      document.write(window.location.href + "<br>"); //returns the url of current page.
+      document.write(window.location.hostname + "<br>"); //returns the domain name of the web host.
+      document.write(window.location.pathname + "<br>"); //returns path and file name of current page.
+      document.write(window.location.protocol + "<br>"); // returns the web protocal used (https or http).
+      function myfun() {
+        window.location.assign(
+          "https://www.w3schools.com/js/js_window_location.asp"
+        ); // assigning the url to a function.
+      }
+    </script>
+  </body>
+</html>

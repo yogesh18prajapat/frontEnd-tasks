@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index First</title>
+        <style>
+         .vertical ul{
+           background-color: darkseagreen;
+           margin: 0;
+           padding: 0;
+           width: 100px;
+           list-style-type:none;
+         }
+        .vertical  li a{
+            display: block;
+             text-decoration: none;
+             padding: 10px 25px;
+             border-bottom: 2px solid white ;
+        }
+        li:last-child{
+            border: none;
+        }
+
+        .vertical  li a:hover:not(.active) {
+            background-color: rgb(46, 33, 21);
+            color:darkseagreen ;
+        }
+        
+        /* ------------------------------------------------------------- */
+
+        .horizontal ul{
+            list-style-type: none;
+            padding: 0;
+            margin :0;
+            background-color: cornflowerblue;
+            width: 100%;
+        }
+        .horizontal  li {
+           float: left;
+        }
+
+        .horizontal li a{
+              display: block;
+              padding: 15px 50px;
+              background-color: cornflowerblue;
+              color:black;
+        }
+
+        .horizontal li a:hover:not(.active){
+               background-color: coral;
+               color: indigo;
+        }
+
+        li a.active {
+            background-color: rgb(18, 186, 241);
+            color: rgb(2, 3, 26);
+        }
+
+
+       </style>
+    </head>
+    <body>
+
+    <div class="vertical">
+        <ul >
+            <li><a class="active" href="https://www.youtube.com/">one</a></li>
+            <li><a href="https://www.youtube.com/">two</a></li>
+            <li><a href="https://www.youtube.com/">three</a></li>
+            <li><a href="https://www.youtube.com/">four</a></li>
+        </ul>
+    </div>
+
+    <div  class="horizontal">
+        <ul>
+            <li><a href="https://www.youtube.com/">one</a></li>
+            <li><a href="https://www.youtube.com/">two</a></li>
+            <li><a href="https://www.youtube.com/">three</a></li>
+            <li  style="float: right;"><a class="active" href="https://www.youtube.com/">four</a></li>
+        </ul>
+    </div>
+
+    </body>
+</html>

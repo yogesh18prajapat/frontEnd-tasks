@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+
+<style>
+
+    tr,td,th,table {
+        border-collapse: collapse;
+         border:2px solid orange
+        }
+    
+    tr{ 
+        background-color: rgb(255, 240, 240);
+         text-align: center;
+          color:darkslategray;
+        }
+
+    tr:hover {
+        background-color:rgb(214, 255, 214); 
+        color: crimson;
+    }
+
+    /* th{color: darkviolet; background-color: darksalmon;}*/
+    th:hover:nth-child(odd), td:hover:nth-child(odd) {
+        background-color:rgb(255, 218, 173);
+    }
+
+    /*td{ background-color: darkseagreen; color: darkslategray; }
+    td:hover {background-color: peachpuff; color: darkviolet ;} */
+
+    caption {
+        background-color: pink; 
+        color: red; 
+        text-align: center; 
+        font-size: 40px;
+    }
+
+</style>
+
+    </head>
+    <body>
+
+        <a href="div.html" >Div and Span</a>
+
+        <table width="100%" length="150px" cellpadding="20px" cellspacing="2px">
+            <caption>TABLE</caption>
+        <tr>
+            <th>heading 1</th>
+            <th>heading 2</th>
+            <th>heading 3</th>
+            <th>heading 4</th>
+        </tr>
+        <tr>
+            <td>data 11</td>
+            <td>data 12</td>
+            <td>data 13</td>
+            <td>data 14</td>
+        </tr>
+        <tr>
+            <td>data 21</td>
+            <td>data 22</td>
+            <td>data 23</td>
+            <td>data 24</td>
+        </tr>
+        <tr>
+            <td>data 31</td>
+            <td>data 32</td>
+            <td>data 33</td>
+            <td>data 34</td>
+        </tr>
+        </table>
+
+
+    </body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+form {
+    text-align: center;
+  }
+  textarea {
+    resize: none;
+  }
+  input {
+    margin-bottom: 15px;
+  }
+  label{
+      font-size: larger;
+      font-style: italic;
+  }

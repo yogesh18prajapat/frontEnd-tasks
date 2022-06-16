@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task5</title>
+</head>
+<body>
+    <button id="btn" onclick="myIteration()">Iterate</button>
+    <p id="demo"></p>
+
+    <script>
+
+        function myIteration(){
+            // let output = document.getElementById('demo').innerHTML;
+            let text = "";
+            for(let i=1;i<=100;i++){ 
+            //     if(i % 3 == 0){
+            //         text += "Fizz <br>";
+            //     }if(i % 5 == 0){
+            //         text += "Buzz <br>";
+            //     }if((i % 3 == 0) && (i % 5 == 0)){
+            //         text += "FizzBuzz <br>";
+            //     }else{
+            //     text += i + "<br>";
+            // }
+
+                if((i % 3 == 0) && (i % 5 == 0)){
+                    text += "FizzBuzz <br>";
+                }else if(i % 5 == 0){
+                    text += "Buzz <br>";
+                }else if(i % 3 == 0){
+                    text += "Fizz <br>";
+                }else{
+                text += i + "<br>";
+            }
+            }
+            document.getElementById('demo').innerHTML = text ; //+ "<br>"
+
+
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

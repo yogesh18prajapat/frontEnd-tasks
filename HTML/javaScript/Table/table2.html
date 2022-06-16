@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="table.css" />
+  </head>
+
+  <body>
+    <div class="body">
+      <div class="form_box container">
+        <!--Creating form to take input values from user-->
+        <form id="form">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="enter your name" required />
+          <label for="email" title="Optional">Email</label>
+          <input type="email" id="email" placeholder="Email" title="Optional" />
+          <label for="dob">Date Of Birth</label>
+          <input
+            type="date"
+            id="dob"
+            placeholder="Date of birth"
+            max="2021-12-31"
+            required
+          />
+          <button type="button" id="addbtn" onclick="createRow()">Add</button>
+          <button type="button" id="removebtn" onclick="deleteRow()">
+            Remove
+          </button>
+          <!-- <input type="submit" value="Add" /> -->
+        </form>
+      </div>
+
+      <div class="table_box container">
+        <table id="table">
+          
+        </table>
+      </div>
+    </div>
+
+    <script>
+      var arr = [];
+
+
+
+      function createRow() {
+        const form = document.getElementById("form");
+        let name = form.elements["name"].value;
+        let email = form.elements["email"].value;
+        let dob = form.elements["dob"].value;
+        if (name.trim() == "") {
+          alert("enter name");
+          return false;
+        } else if (dob == "") {
+          alert("Date Of Birth");
+          return false;
+        } else if (email.trim() == "") {
+          email = "-";
+        }
+
+        arr.push({
+          name: name,
+          email: email,
+          dob: dob,
+        });
+        renderTable()
+      }
+
+      function deleteRow() {
+        arr.pop()
+        renderTable()
+      }
+
+      function renderTable(){
+        var code = `<tr>
+            <th>name</th>
+            <th>email</th>
+            <th>DOB</th>
+          </tr>`
+        for (let i = 0; i < arr.length; i++) {
+         code += `<tr>
+            <td>${arr[i].name}</td>
+            <td>${arr[i].email}</td>
+            <td>${arr[i].dob}</td>
+          </tr>`;
+        }
+        document.getElementById("table").innerHTML = code;
+      }
+      //   function createRow() {
+      //     table += "<tr><td>name</td><td>email</td><td>PhNo</td><th onclick='createRow()'>Click Me!</th></tr>";
+      //     document.getElementById("container").innerHTML = table;
+      //   }
+    </script>
+  </body>
+</html>

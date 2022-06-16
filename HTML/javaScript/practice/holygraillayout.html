@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Holy Grail Layout</title>
+    <link rel="stylesheet" href="nav.css">
+
+    <style>
+        *{
+            margin: 2px;
+        }
+        body{
+            background-color: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 100vh;
+        }
+
+        .flex_header, .flex_footer{
+            background-color: rgb(164, 201, 164);
+            padding:5rem 0;
+        }
+        .flex_main{
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+
+        .flex_nav{
+            background-color:burlywood;
+            padding: 3rem 0;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            box-sizing: border-box;
+            border: 2px soli #f1f1f1;
+            /* flex: 1 1 auto; */
+
+        }
+        .flex_article{
+            background-color:coral;
+            padding-top: 3rem;
+            flex-grow: 2;
+            flex-shrink: 2;
+            flex-basis: auto;
+             /* flex: 2 2 auto; */
+           
+
+        }
+        .flex_aside{
+            background-color:burlywood;
+            padding-top: 3rem;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            /* flex: 1 1 auto; */
+            
+        }
+        
+        .nav_container{
+            font-size: 1.5rem;
+            padding: 0;
+            margin: 0;
+            background-color: burlywood;
+            width: fit-content;
+
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* justify-content: space-around; */
+            /* align-items: center; */
+        }
+       .nav_items{
+            list-style-type: none;
+            background-color: burlywood;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            /* gap: 20px; */
+            justify-content: space-around;
+            /* flex-grow: 1; */
+            text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+        }
+        .item{
+            flex-basis: auto;
+            padding: 1rem;
+            flex-wrap: wrap;
+        } 
+        .item:hover{
+            background-color: #555;
+            color: white;
+        }
+      
+
+    </style>
+
+
+
+</head>
+<body>
+    <header class="flex_header">
+        HEADER
+    </header>
+    <main class="flex_main">
+      <nav class="flex_nav nav_container">
+            <!-- <ul>
+                <li>HOME</li>
+                <li>ACCOUNT</li>
+                <li>SERVICE</li>
+                <li>CONTACT</li>
+            </ul> -->
+        <ul class="nav_items">
+            <li class="item item1">HOME</li>
+            <li class="item item2">ACCOUNT</li>
+            <li class="item item3">SERVICE</li>
+            <li class="item item4">CONTACT</li>
+        </ul>
+      </nav>
+      <article class="flex_article">
+          ARTICLE
+      </article>
+      <aside class="flex_aside">
+        <nav>
+           ASIDE
+        </nav>
+      </aside>
+    </main>
+    <footer class="flex_footer">
+        FOOTER
+    </footer>
+    
+</body>
+</html>

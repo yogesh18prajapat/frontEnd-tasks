@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Practice</title>
+  </head>
+  <body>
+   
+
+    
+ ******Form Validation************
+
+    <form id="formone" method="post" onsubmit="validateForm()">
+      firstName: <input type="text" id="fname"/><br>
+      middleName: <input type="text" id="mname"/><br>
+      lastName: <input type="text" id="lname"/><br>
+
+      <input type="submit" value="submit" /><br />
+    </form> -->
+   
+<script>
+
+function validateForm(){
+const x = document.forms["formone"]["fname"].value;
+const y = document.forms["formone"]["mname"].value;
+const z = document.forms["formone"]["lname"].value;
+
+if(x == "" || y == "" || z == "" ){
+    alert("fill chiye ra babu");
+}
+}
+
+</script>
+
+  </body>
+</html>
+
+<!-- <script>
+
+        var x = Math.round(2.5);
+        document.write(x + "<br>");
+ 
+        document.write(Math.round( Math.random()*100) + "<br>");
+
+    </script> -->
+
+<!-- 
+............prompt.................
+<body>
+    <input type="button" name="" value="Click Me!" onclick="myfun()">
+</body>
+
+<script>
+    var x = prompt("Give me some value :(");
+
+    if(x != null){
+        document.write("yeah!.. I got \""+x+"\".");
+    }
+</script>
+       
+        
+        
+............confirm box................
+<body>
+    <input type="button" name="" value="Click Me!" onclick="myfun()">
+</body>
+
+<script>
+            //     function myfun(){
+            //     var user = confirm("Do you want to watch Anime");
+            
+            //     if(user == true){
+            //         window.open("https://zoro.to");
+            //         return true;
+            //     }else{
+            //         document.write("Ok bye :(");
+            //     }
+            // }   
+</script> 
+
+-->

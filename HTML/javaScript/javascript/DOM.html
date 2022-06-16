@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+
+</head>
+<body>
+   <p class="para">first paragraph</p>
+   <p class="para2">second paragraph</p>
+
+   <ul>
+       <li>list 1</li>
+       <li>list 2</li>
+       <li>list 3</li>
+   </ul>
+    
+</body>
+<script>
+
+    var quer = document.querySelector('p').innerHTML;
+    document.write(quer);
+
+
+    var child = document.body.children;
+    console.log(child);
+
+    //Creating a element "para"
+    var para = document.createElement('p');
+    //Creating a node "node"
+    var node = document.createTextNode("this is a node created in JS");
+    //Adding node into a para
+    para.appendChild(node);
+    // we created a child para and then added node but we did'nt add that into document.
+    console.log(para);
+    // To add para that we created in JS into document we have to
+    document.body.appendChild(para);
+</script>
+
+</html>
+
+
+ 
+ <!-- <body>
+     <p id="first">This is paragraph 1</p><br/>
+     <p class="second">This is paragraph 2</p><br/>
+     <p class="second">This is paragraph 3</p><br/>
+     <p class="second">This is paragraph 4</p><br/>
+     <p class="third">This is paragraph 5</p><br/  
+ </body>
+ <script>
+     // var a = document.getElementById("first").innerHTML; // ="hello world!";
+     // document.write(a +"<br>");
+     var b = document.getElementsByClassName("second")[0].innerHTML;
+    document.write(b);
+ <script> -->

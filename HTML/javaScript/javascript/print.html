@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+<div id="one">
+    This is Division one
+<button onclick="myfun('one')">Div one</button>
+</div>
+<div id="two">
+    This is Division three
+<button onclick="myfun('two')">Div two</button>
+</div>
+<div id="three">
+    This is Division two
+<button onclick="myfun('three')">Div three</button>
+</div>
+
+<button onclick="myWholePage()">Whole page</button>
+
+<script>
+      function myWholePage(){
+          window.print();
+      }
+      function myfun(paravalue){
+          var backup = document.body.innerHTML;
+          var divContent = document.getElementById(paravalue).innerHTML;
+          document.body.innerHTML = divContent;
+          window.print();
+          document.body.innerHTML = backup;
+          
+      }
+
+</script>
+
+    
+</body>
+</html>

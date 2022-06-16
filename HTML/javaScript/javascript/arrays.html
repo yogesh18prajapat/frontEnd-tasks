@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Arrays</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+ 
+    <script>
+    //    var names = ["name9", "name8", "name7", "name1", "name2", "name3", "name4"];
+    //    document.write("Actual array  : "+names+"<br>"+"<br>");
+
+    //    var length = names.length;
+    //    document.write("length of an array is "+length+"<br>"+"<br>");
+
+    //    var sorted = names.sort();
+    //    document.write("sorted array : "+sorted+"<br>"+"<br>");
+    
+    //    names.push("name10"); //add's element at the end of an array
+    //    document.write("adding a element in an array : "+names+"<br>"+"<br>");
+
+    //    names.pop(); // pops the last element
+    //    document.write("arry after pop :  "+names+"<br>"+"<br>");
+     
+    //    names.shift() // pops the first element in an array
+    //    document.write("array after shift :  "+names+"<br>"+"<br>");
+
+    //    names.unshift("name1") // pops the first element in an array
+    //    document.write("array after unShift :  "+names+"<br>"+"<br>");
+
+    //    names.reverse();
+    //    document.write("array after reverse :  "+names+"<br>"+"<br>");
+
+       
+    //    document.write("index of element name7 is "+names.indexOf("name7") +"<br>"+"<br>");
+
+
+    //    var work = ["work1", "work2", "work3", "work4", "work5","work6"]
+    //    document.write("work array  : "+work+"<br>"+"<br>");
+
+
+    //    //adding two arrays 
+    //    document.write("after using concat(names and work) : "+names.concat(work) +"<br>"+"<br>");
+
+    // //************Checking if the variable is an array or not
+    //    var check = Array.isArray(work);
+    //    document.write("work variable is an array : "+check+"<br>"+"<br>");
+    //    var check = Array.isArray(names);
+    //    document.write("names variable is an array : "+check+"<br>"+"<br>");
+
+    // //**********************Splice*******************
+    //    const fruits = ["Banana", "Mango", "Kiwi", "Orange"];
+    //    document.getElementById('demo1').innerHTML = fruits + "<br>";
+    //    let removed = fruits.splice(2,2,"frruit1","fruit2");  // storing removed elements in 'removed'
+    //    document.getElementById('demo2').innerHTML = fruits + "<br>";
+    //    document.getElementById('demo3').innerHTML = removed + "<br>";
+
+
+    const number1 = [10,20,15,19,09];
+    const number2 = number1.map(myfun);
+    const sorted = number1.sort(function(a,b){return b-a});
+    document.getElementById('demo1').innerHTML = number1;
+    document.getElementById('demo2').innerHTML = number2;
+    document.getElementById('demo3').innerHTML = sorted;
+
+
+
+    function myfun(value){
+        return value*2;
+    }
+
+    let txt = "";
+    number1.forEach(myfun2);
+    document.getElementById('demo4').innerHTML = txt;
+    function myfun2(value){
+        txt += value + "<br>";
+    }
+
+    document.getElementById('demo5').innerHTML = Date.now();
+  
+
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>forms</title>
+        <style>
+            body {background-color:rgba(150, 212, 212, 0.4);}
+            p {color: red;}
+            form {color: rgb(76, 65, 225);}
+            input {color:indigo; font-family: 'Times New Roman', Times, serif;}
+        </style>
+    </head>
+    <body>
+        <p>Back to index<a href="index.html"> Click this</a></p>
+        <p>Back to sample1<a href="sample1.html"> Click this</a></p>
+        <p>Back to sample2<a href="sample2.html"> Click this</a></p>
+
+
+        <form>
+            <h1 style="font: size 50px;">FORM</h1>
+          Username:<input type="text" name="uname" maxlength="10" autofocus/><br/>
+          Password:<input type="password" name="upass" maxlength="15" disabled/><br/>
+          Gender:</br>
+                 <input type="radio" id="male" name="gender" value="male"/>
+                 <label for="male">Male</label></br>
+                 <input type="radio" id="female" name="gender" value="female"/>
+                 <label for="female">Female</label><br/>
+          Course:<input type="checkbox" name="course1" value="HTML"/>HTML 
+                 <input type="checkbox" name="course2" value="CSS"/>CSS
+                 <input type="checkbox" name="course3" value="JavaScript"/>JavaScript
+                 <input type="checkbox" name="course4" value="C++"/>C++<br/>
+        Age Group:<select name="age">
+                  <option>01-10</option>
+                  <option>11-20</option>
+                  <option>21-30</option>
+                  <option>31-40</option>
+                  <option>>40</option> 
+                  </select> <br/>
+        DOB:<input type="datetime-local" name="dob" min="2000-01-01"/> <br/>  
+        Ph No:<input type="tel" placeholder="123-4567-890" pattern="[1-9]{3} [1-9]{4} [1-9]{3}"> <br/>
+        Email:<input type="email" name="email" required />  <br/> 
+        Ratings:<input type="number" min="01" max="5" step="0.5"/> <br/>
+        Ratings:<input type="range" min="01" max="100" /> <br/>
+        List Attribute: <input list="example" />
+                        <datalist id="example" >
+                            <option value="example1"></option>
+                            <option value="example2"></option>
+                            <option value="example3"></option>
+                        </datalist><br/>
+        Comments:<br/>
+        <textarea name="comments" rows="5" cols="30"></textarea><br/>
+        <input type="submit" name="submit"/>
+        <input type="reset" name="reset"/><br/> 
+        <input type="button" name="button" value="button"/>   
+        <button onclick="alert('Hello world!')">Click Me!</button>     
+
+        </form>
+    </body>
+</html>
+

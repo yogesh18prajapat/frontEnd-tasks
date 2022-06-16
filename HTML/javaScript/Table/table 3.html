@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Table</title>
+  <style>
+    table {
+      width: 100%;
+    }
+
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    #delbtn,
+    .upbtn {
+      border: 1px solid white;
+      background-image: linear-gradient(to bottom right, rgb(168, 168, 228), rgb(236, 129, 231));
+      color: black;
+    }
+
+    .upbtn {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="body">
+    <div class="form_box container">
+      <!--Creating form to take input values from user-->
+      <form id="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="enter your name" required />
+        <label for="email" title="Optional">Email</label>
+        <input type="email" id="email" placeholder="Email" title="Optional" />
+        <label for="dob">Date Of Birth</label>
+        <input type="date" id="dob" placeholder="Date of birth" max="2021-12-31" required />
+        <button type="button" id="addbtn" onclick="add()">Add</button>
+        <!--onClick this button adds last row in the table-->
+        <button type="button" id="removebtn" onclick="remove()">Remove</button>
+        <!--onClick this button removes last row in the table-->
+        <button type="button" id="updatebtn" onclick="showButtons()">update</button>
+        <!--onClick this button shows the hidden buttons in table to update each row-->
+
+      </form>
+    </div>
+
+    <!--Creating a div conatiner and table inside that to display input values-->
+    <div class="table_box container">
+      <table id="table">
+
+      </table>
+    </div>
+  </div>
+
+  <script>
+    // declaring a empty array to use globally.
+    var arr = [];
+
+    //Creating an object so we can use input object whenever we want through this function. 
+    function createObj() {
+      //getting a values from user input and soring in a variable
+      const form = document.getElementById("form");
+      let name = form.elements["name"].value;
+      let email = form.elements["email"].value;
+      let dob = form.elements["dob"].value;
+      // validation for input values
+      if (name.trim() == "") {
+        alert("enter name");
+        return false;
+      } else if (dob == "") {
+        alert("Date Of Birth");
+        return false;
+      } else if (email.trim() == "") {
+        email = "-";
+      }
+      //creatind a new object based on input values
+      var newObj = {
+        name: name,
+        email: email,
+        dob: dob,
+      };
+      return newObj; //This object will be returned whenever createObj() is called.
+    }
+
+    //Function to add input values into a table of columns and rows.
+    function add() {
+      //calling createObj() and storing in "obj" variable
+      let obj = createObj();
+      //adding object into an array by using push() method
+      arr.push(obj);
+      //updating a table after adding each row
+      renderTable();
+    }
+
+    //To remove last row of a table
+    function remove() {
+      arr.pop();
+      //calling "renderTable()" to update table after deleting a row.
+      renderTable()
+    }
+
+    //To delete a selected row.
+    function deleteRow(data) {
+      for (let i = 0; i <= arr.length; i++) {
+        if (i == data) {
+          arr.splice(i, 1);
+        }
+      }
+      renderTable();
+    }
+
+    //This function is used to update(display) a table.
+    function renderTable() {
+      // creating a static head of the table
+      var code = `<thead><tr>
+            <th>sl.No</th>
+            <th>name</th>
+            <th>email</th>
+            <th>DOB</th>
+          </tr></thead><tbody>`
+      for (let i = 0; i < arr.length; i++) {
+        // creating a dynamic body of the table
+        code += `<tr>
+            <td>${i + 1}</td>
+            <td>${arr[i].name}</td>
+            <td>${arr[i].email}</td>
+            <td>${arr[i].dob}</td>
+            <td>
+              <button type="button" id="delbtn" onclick="deleteRow(${i})">Delete</button> 
+              <button type="button" class="upbtn" onclick="updateRow(${i})">update</button>
+              </td>
+            </tr>`;
+      }
+      //buttons in table is used to delete or update a particular row
+      code += `</tbody>`;
+      document.getElementById("table").innerHTML = code;
+    }
+
+
+    //To display the hidden butons onClick of update button in form. This function reveals update button in table.
+    function showButtons() {
+      //If we use id instead of class, css and other functions will be applied to only one element
+      for (let i = 0; i < arr.length; i++) {
+        let button = document.getElementsByClassName('upbtn')[i];
+        button.style.display = "inline";
+      }
+    }
+
+    //This function hides row update buttons after updating a row.
+    function hideButtons() {
+      //same logic for both showButtons() & hideButtons().
+      for (let i = 0; i < arr.length; i++) {
+        let button = document.getElementsByClassName('upbtn')[i];
+        button.style.display = "none";
+      }
+    }
+
+
+    function updateRow(data) {
+      hideButtons();
+      //hideButtons() will be called after pressing update button in table.
+
+      //calling createObj() and storing in obj variable
+      let obj = createObj();
+
+      //Replacing the old properties values with new.
+      for (let i = 0; i < arr.length; i++) {
+        if (i == data) {
+          arr[i]["name"] = obj.name;
+          arr[i]["email"] = obj.email;
+          arr[i]["dob"] = obj.dob;
+
+          //Updating a table after udating a particular row
+          renderTable();
+
+        }
+      }
+    }
+
+  </script>
+</body>
+
+</html>

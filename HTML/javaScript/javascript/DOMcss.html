@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="first" >This is a heading 1</h1>
+    <h1 id="second">This is Heading 2</h1>
+
+    <button onclick="myfun()">Click Me</button>
+    
+
+    <script>
+        document.getElementById('first').style.color = "red";
+        document.getElementById('second').setAttribute(
+            "style", "color:green; background-color:black; font-size:70px;"
+        );
+
+        document.write(window.location.href + "<br>");
+        document.write(window.location.hostname + "<br>");
+        document.write(window.location.pathname + "<br>");
+        document.write(window.location.protocol + "<br>");
+        function myfun(){
+        window.location.assign("https://www.w3schools.com/js/js_window_location.asp");
+        }
+
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex</title>
+    <style>
+        body{
+    margin: 0;
+}
+
+.container{
+    border: 5px solid black;
+    display: flex;
+    height: 500px;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    /* flex-flow: row  wrap;  */
+    /* This is a shortHand property for flex-direction and flex-wrap {flex-flow = flex-direction flex-wrap} */
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+}
+
+.flex_item{
+    padding: 2rem;
+    font-size: 130%;
+    color: rgb(1, 15, 1);
+    text-align: center;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+}
+
+.item1{
+    background-color: cadetblue;
+    /* order: 0; default */
+    /* flex-basis: 20%; set the initial size of flex item */
+
+}
+.item2{
+    background-color:coral;
+
+}
+.item3{
+    background-color:cornflowerblue;
+    /* flex-grow: 1; takes up the free space */
+
+}
+.item4{
+    background-color:lightslategrey;
+    /* flex-grow: 3; */
+}
+.item5{
+    background-color:lightcyan;
+    /* flex-grow: 0; default */
+}
+.item6{
+    background-color:lightgreen;
+    /* flex-shrink: 3; this item willl shrink 3 times the other items */
+    
+}
+.item7{
+    background-color:paleturquoise;
+    /* align-self: flex-end; */
+    /* align-self: auto; this inherts the default property from flex container.
+    And default value for align-items id stretch*/
+}
+.item8{
+    background-color:royalblue;
+    /* align-self: center; */
+}
+.item9{
+    background-color:yellowgreen;
+    /* align-self: flex-start; */
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="flex_item item1">Item 1</div>
+        <div class="flex_item item2">Item 2</div>
+        <div class="flex_item item3">Item 3</div>
+        <div class="flex_item item4">Item 4</div>
+        <div class="flex_item item5">Item 5</div>
+        <div class="flex_item item6">Item 6</div>
+        <div class="flex_item item7">Item 7</div>
+        <div class="flex_item item8">Item 8</div>
+        <div class="flex_item item9">Item 9</div>
+
+    </div>
+
+    
+</body>
+</html>

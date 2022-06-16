@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task1</title>
+</head>
+<body>
+    <h5>Is input number multiple of 3 or 7</h5><br/>
+    <label>Input</label>
+    <input type="text"  id="num">
+    <button id="btn" onclick="myfunction()">Get Answer</button><br/>
+    <p id="demo"></p>
+    
+    <script>
+
+        function myfunction(){
+            let numb = document.getElementById('num').value;
+            if(isNaN(numb)){
+                document.getElementById('demo').innerHTML = "not a valid input";
+            }else{
+                myfun(numb);
+            }
+        }
+      
+      function myfun(input){
+        //   let numb = document.getElementById('num').value;
+          let text = "";
+          let div3 = input % 3;
+          let div7 = input % 7;
+          if((div3 == 0) && (div7 == 0)){
+              text = "input is a multiple of 3 and 7";
+          }else if(div7 == 0){
+              text = "input is a multiple of 7";
+          }else if(div3 == 0){
+              text = "input is a multiple of 3";
+          }else{
+              text = "Input is neither a multiple of 3 nor 7";
+          }
+          document.getElementById('demo').innerHTML = text;
+      }
+
+
+    </script>
+</body>
+</html>

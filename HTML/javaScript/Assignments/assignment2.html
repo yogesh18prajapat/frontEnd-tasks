@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="assignment2.css">
+
+    <!-- <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .container {
+        /* background-color:rgb(100, 185, 255); */
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(100, 185, 255),
+          rgb(116, 99, 224)
+        );
+        /* background-repeat: no-repeat; */
+        height: 100vh;
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-sizing: border-box; */
+        /* background-color:rgb(100, 185, 255); */
+        /* background-color: rgb(116, 99, 224); */
+      }
+      
+    
+      /* .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+      .form {
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 2px 5px;
+        background-color: white;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .right,
+      .left,
+      .heading,
+      .bottom {
+        padding: 13px;
+      }
+      .heading {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="password"] {
+        padding: 8px 10px;
+        margin-bottom: 10px;
+        border: 2px solid rgb(194, 194, 194);
+        box-shadow: 0px 1px 1px rgb(177, 171, 171);
+        border-radius: 4px;
+      }
+      .bottom label {
+        padding-right: 15px;
+      }
+
+      button {
+          border:white;
+        width: 100%;
+        padding: 3px 0px;
+        margin-bottom: 20px ;
+        color: white;
+        background-color: rgb(100, 185, 255);
+        background-image: linear-gradient(
+          to  right,
+          rgb(100, 185, 255),
+          rgb(116, 99, 224)
+        );
+      }
+    </style> -->
+
+    <!-- <style>
+       
+        section {
+            background-color: lightskyblue;
+            width: 50%;
+            margin:0 auto;
+            position: relative;
+        }
+       
+        .flex {
+            display: flex;
+            justify-content: space-around;
+        }
+       
+
+        input[type=text], input[type=password], input[type=tel], input[type=email]
+        {
+            width: auto;
+            padding: 8px 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid rgb(221, 219, 219);
+            box-shadow: 0px 2px 3px grey;
+        } 
+        /* .right {
+            padding-left: 60px;
+        } */
+
+        /* .heading, .bottom{
+            margin: 15px;
+            padding: 10px;
+        } */
+
+        
+
+        #submit{
+           width: 100%;
+           padding: 5px  0px;
+        }
+        form label {
+            font-weight: bolder;
+        }
+
+        /* .gender label{
+            padding-right: 40px;
+        } */
+            
+    </style> -->
+  </head>
+  <body>
+      <div class="container">
+      <form class="form">
+        <h1 class="heading">Registration</h1>
+
+        <div class="flex">
+          <div class="left">
+            <label for="fname">Full Name</label><br />
+            <input
+              type="text"
+              id="fname"
+              name=""
+              placeholder="Enter your name"
+            /><br />
+
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Enter your Email"
+            /><br />
+
+            <label for="password">Password</label><br />
+            <input
+              type="password"
+              name=""
+              id="password"
+              placeholder="Enter your password"
+            /><br />
+          </div>
+
+          <div class="right">
+            <label for="uname">Username</label><br />
+            <input
+              type="text"
+              id="uname"
+              name=""
+              placeholder="Enter your username"
+            /><br />
+
+            <label for="phone">Phone Number</label><br />
+            <input
+              type="tel"
+              name=""
+              id="phone"
+              placeholder="Enter your number"
+            /><br />
+
+            <label for="con_password">Confirm Password</label><br />
+            <input
+              type="password"
+              name=""
+              id="con_password"
+              placeholder="Confirm your password"
+            /><br />
+          </div>
+        </div>
+
+        <div class="bottom">
+          <label for="gender">Gender</label><br />
+          <div class="gender">
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="none" />
+            <label for="none">prefer not to say</label>
+          </div>
+        </div>
+        <button id="submit" name="register" value="register">Register</button>
+      </form>
+</div>
+  </body>
+</html>

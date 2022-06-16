@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Time</title>
+  </head>
+  <body>
+    <button onclick="clearInterval(d)">Click me</button>
+
+    <script>
+      var d = setTimeout(timealert, 3000);
+
+      function timealert() {
+        alert("Your time has come, let's go");
+      }
+    </script>
+
+    <!-- <script>
+    // ********* Date *********
+        // Months from zero to eleven.
+        var d = new Date();
+        // var d = new Date(2015,11,5);
+        document.write(d + "<br>");
+
+        // we can get individually by using getObject methods.
+        var date = d.getUTCDate();
+        var month = d.getUTCMonth() + 1;
+        var year = d.getUTCFullYear();
+        document.write(date + "/"+ month + "/"+ year + "<br>");
+
+
+        // we can also use setters for setting values.
+         d.setUTCDate(15);
+         d.setUTCFullYear(2015);
+         d.setMonth(0);
+         document.write(d + "<br>");
+    //  getters for time
+     var t = d.getTime();
+     document.write("Time in miliseconds :"+t + "<br>");
+
+
+     var hours = d.getHours();
+     var minutes = d.getMinutes();
+     var seconds = d.getSeconds();
+     var milsec = d.getMilliseconds();
+
+     document.write(hours+":"+minutes+":"+seconds+":"+milsec);
+     
+     </script> -->
+    <!-- <button id="btn" onclick="start">Start</button> -->
+
+    <!-- <p id="showclock"></p>
+     <button onclick="clearInterval(start)">Stop</button>
+
+     <br>
+     <script>
+    //    document.getElementById("btn").addEventListener("click",()=>{
+    //     setInterval(myfun, 1000)
+    //    })
+
+       function myfun(){
+        var d = new Date();
+        var tim = d.toLocaleTimeString();
+        document.getElementById('showclock').innerHTML = tim;
+      }
+  const start = setInterval(myfun, 1000);
+     </script> -->
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index First</title>
+        <style>
+
+           body {margin: 0;}
+
+         ul {
+             background-color: black;
+             margin: 0;
+             padding: 0;
+             /* position: sticky;
+             position:-webkit-sticky; */
+             position: fixed;
+             top: 0;
+             overflow: hidden;
+             width: 100%;
+         }
+
+         li{
+             float:left;
+             list-style-type: none;   
+
+         }
+
+         li a{
+            display:block;
+            text-decoration: none;
+            padding: 20px;
+             text-align: center;
+             color:green;
+         }
+
+         .active {
+             color: black;
+             background-color: green;
+         }
+
+         li a:hover:not(.active) {
+             background-color: rgb(41, 27, 27);
+             color: white;
+         }
+          
+         /* .content {
+             clear: both;
+             padding: 50px 10px 20px 20px;
+             background-color: darkseagreen;
+             color: rgb(65, 0, 112);
+         } */
+
+
+       </style>
+    </head>
+    <body>
+
+        <div class="navigation">
+          <ul>
+              <li><a class="active" href="somelink">one</a></li>
+              <li><a href="somelink">two</a></li>
+              <li><a href="somelink">three</a></li>
+              <li><a href="somelink">four</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="content">
+            <h1>HEADING 1</h1>
+            <h2>HEADING 2</h2>
+            <h3>HEADING</h3>
+           <p>this is something even i dont kbow, dont want to know.
+            this is something even i dont kbow, dont want to know.
+        
+           </p>  
+
+        </div> -->
+
+
+
+    </body>
+</html>
